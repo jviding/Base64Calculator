@@ -21,6 +21,6 @@ libraryDependencies ++= {
   )
 }
 
-enablePlugins(JavaAppPackaging)
+name := "myserver" enablePlugins(JavaAppPackaging)
 
 Revolver.settings
