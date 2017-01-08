@@ -1,5 +1,9 @@
 organization  := "com.example"
 
+import com.typesafe.sbt.SbtStartScript
+
+seq(SbtStartScript.startScriptForClassesSettings: _*)
+
 version       := "0.1"
 
 scalaVersion  := "2.11.6"
