@@ -1,14 +1,12 @@
 organization  := "com.example"
 
-import com.typesafe.startscript.StartScriptPlugin
-
-seq(StartScriptPlugin.startScriptForClassesSettings: _*)
-
 version       := "0.1"
 
 scalaVersion  := "2.11.6"
 
 name := "calculator"
+
+resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
@@ -26,5 +24,3 @@ libraryDependencies ++= {
     "org.scalaz"          %%  "scalaz-core"   % "7.1.0"
   )
 }
-
-Revolver.settings
