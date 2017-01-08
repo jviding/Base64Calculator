@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/calculate
+web: target/start
