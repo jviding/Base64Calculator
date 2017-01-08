@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/myserver
+web: target/start Web

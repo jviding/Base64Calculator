@@ -1,14 +1,14 @@
 organization  := "com.example"
 
-import com.typesafe.sbt.SbtStartScript
+import com.typesafe.startscript.StartScriptPlugin
 
-seq(SbtStartScript.startScriptForClassesSettings: _*)
+seq(StartScriptPlugin.startScriptForClassesSettings: _*)
 
 version       := "0.1"
 
 scalaVersion  := "2.11.6"
 
-name := "myserver"
+name := "calculator"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
@@ -26,7 +26,5 @@ libraryDependencies ++= {
     "org.scalaz"          %%  "scalaz-core"   % "7.1.0"
   )
 }
-
-enablePlugins(JavaAppPackaging)
 
 Revolver.settings
