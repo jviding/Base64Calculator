@@ -1,7 +1,5 @@
 organization  := "com.example"
 
-settings(com.typesafe.sbt.SbtNativePackager.packageArchetype.java_application: _*)
-
 version       := "0.1"
 
 scalaVersion  := "2.11.6"
