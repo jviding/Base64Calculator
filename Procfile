@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/calculator
+web: target/universal/stage/bin/calculate
