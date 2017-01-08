@@ -27,4 +27,6 @@ libraryDependencies ++= {
   )
 }
 
+enablePlugins(JavaAppPackaging)
+
 Revolver.settings
