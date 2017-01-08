@@ -1,8 +1,12 @@
 organization  := "com.example"
 
+settings(com.typesafe.sbt.SbtNativePackager.packageArchetype.java_application: _*)
+
 version       := "0.1"
 
 scalaVersion  := "2.11.6"
+
+name := "myserver"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
@@ -20,8 +24,6 @@ libraryDependencies ++= {
     "org.scalaz"          %%  "scalaz-core"   % "7.1.0"
   )
 }
-
-name := "myserver"
 
 enablePlugins(JavaAppPackaging)
 
